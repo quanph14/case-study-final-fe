@@ -1,0 +1,102 @@
+
+<app-nav-bar></app-nav-bar>
+<section class="intro-single">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-lg-8">
+        <div class="title-single-box">
+          <h1 class="title-single">{{userName}}</h1>
+          <br>
+          <a [routerLink]="['/update',userId]" class="btn btn-info">Sửa thông tin cá nhân</a>
+        </div>
+      </div>
+      <div class="col-md-12 col-lg-4">
+        <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a routerLink="/home">Trang chủ</a>
+            </li>
+
+            <li class="breadcrumb-item active" aria-current="page">
+              {{userName}}
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="agent-single">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="agent-avatar-box">
+              <img src="{{avatar}}" alt="" class="agent-avatar img-fluid" style="width: 100%; height: 400px">
+            </div>
+          </div>
+          <div class="col-md-5 section-md-t3">
+            <div class="agent-info-box">
+              <div class="agent-title">
+                <div class="title-box-d" style="font-size: 24px">
+                  <strong>{{fullName}} </strong>
+                </div>
+              </div>
+              <div class="agent-content mb-3">
+                <p class="content-d color-text-a">
+                </p>
+                <div class="info-agents color-a">
+                  <div class="info-agents color-a">
+                    <p style="font-size: 18px">
+                      <strong>Địa chỉ: </strong>
+                      <span class="color-text-a" style="color: grey;">{{userAddress}}</span>
+                    </p>
+                    <p style="font-size: 18px">
+                      <strong>Số điện thoại: </strong>
+                      <span class="color-text-a" style="color: grey;">{{phoneNumber}}</span>
+                    </p>
+                    <p style="font-size: 18px">
+                      <strong>Email: </strong>
+                      <span class="color-text-a" style="color: grey;">{{email}}</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="socials-footer">
+                  <ul class="list-inline">
+                    <li class="list-inline-item">
+                      <a href="#" class="link-one">
+                        <i class="fa fa-facebook" aria-hidden="true" style="font-size: 24px"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#" class="link-one">
+                        <i class="fa fa-twitter" aria-hidden="true" style="font-size: 24px"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#" class="link-one">
+                        <i class="fa fa-instagram" aria-hidden="true" style="font-size: 24px"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#" class="link-one">
+                        <i class="fa fa-pinterest-p" aria-hidden="true" style="font-size: 24px"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#" class="link-one">
+                        <i class="fa fa-dribbble" aria-hidden="true" style="font-size: 24px"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<app-footer></app-footer>
